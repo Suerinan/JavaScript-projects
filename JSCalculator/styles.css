@@ -1,0 +1,123 @@
+html{ /* ADJUST THE DESIGN TO FILL THE WHOLE SCREEN */
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* GENERIC SPACING ADJUSTMENTS */
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* CREATING GRADIENT BACKGROUND AND ADJUSTING CALCULATOR POSITION TO CENTER */
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #001eff, #00c8ff, #63c9b4
+    );
+    display: flex;
+    font-family: 'Dosis', 'sans-serif';
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+/* SETTING THE CALCULATOR TRANSPARENT BAKGROUND */
+.wrapper{
+    backdrop-filter: blurr(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+/* SCREEN DESIGN */
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+/* SPACING BUTTONS */
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+/* ALL BUTTONS BASIS DESIGN */
+.calc-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+/* DESIGN FOR THE BUTTONS AT THE END OF EACH ROW (SIGNS) */
+.calc-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(42, 38, 38, 0.1);
+    color: #fff;
+    background: #4049ff;
+}
+
+/* HOVER DESIGN FOR THE BUTTONS AT THE END OF EACH ROW (SIGNS) */
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+/* CLICK DESGIN FOR THE BUTTONS AT THE END OF EACH ROW (SIGNS) */
+.calc-button:last-child:active{
+    background-color: #7cb5ff;
+    color: inherit;
+}
+
+/* HOVER DESIGN FOR ALL BUTTONS (EXCEPT SIGNS) */
+.calc-button:hover{
+    background-color: #badeff;
+}
+
+/* CLICK DESIGN FOR ALL BUTTONS (EXCEPT SIGNS) */
+.calc-button:active{
+    background-color: #7cb5ff;
+}
+
+/* SPECIAL FLEX FOR THE CLEARING BUTTON */
+.double{
+    flex-basis: 47%;
+}
+
+/* SPECIAL FLEX FOR THE 0 BUTTON */
+.triple{
+    flex-basis: 73%;
+}
